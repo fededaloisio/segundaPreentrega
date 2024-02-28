@@ -3,7 +3,7 @@ import styles from "../../css/Navbar.module.css"
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.navbarContainer}>
         <span>
             Logo
         </span>

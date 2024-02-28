@@ -3,7 +3,7 @@ import { ProductCard } from "../../common/ProductCard";
 
 const ItemList = ({ items }) => {
   return (
-    <div>
+    <div style={{display: "flex", marginTop: "15px"}}>
       {items.map(({ id, title, price, description, img }) => {
         return (
           <ProductCard

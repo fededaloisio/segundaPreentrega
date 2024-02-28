@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import {products} from "../../../productsMockup"
+import { products } from "../../../productsMock";
+import { useEffect, useState } from "react";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -8,7 +8,7 @@ const ItemListContainer = () => {
   useEffect(() => {
     const tarea = new Promise((resolve, reject) => {
       resolve(products);
-      //reject("Error");
+      //reject( "Error" );
     });
 
     tarea
@@ -16,15 +16,16 @@ const ItemListContainer = () => {
         setItems(res);
       })
       .catch((err) => {
-        console.log(err)
+        console.log(err);
       });
   }, []);
 
 
   return(
     <>
-    <ItemList items={items}/>
+    <ItemList items={items} />
     </>
   )
 }
-export default ItemListContainer;
+
+export default ItemListContainer
