@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2449ad;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin: 15px;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
