@@ -8,6 +8,7 @@ const ItemList = ({ items }) => {
         return (
           <ProductCard
             key={id}
+            id={id}
             title={title}
             price={price}
             description={description}
